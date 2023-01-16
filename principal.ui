@@ -17,9 +17,16 @@
    <iconset resource="Resources.qrc">
     <normaloff>:/IMG/Phonebook.png</normaloff>:/IMG/Phonebook.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(165, 105, 2);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTableWidget" name="tblLista"/>
+    <widget class="QTableWidget" name="tblLista">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(218, 255, 212);</string>
+     </property>
+    </widget>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
