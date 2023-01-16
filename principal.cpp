@@ -103,3 +103,10 @@ void Principal::cargarContactos()
     }
 }
 
+
+
+void Principal::on_btnEditar_clicked()
+{
+
+}
+

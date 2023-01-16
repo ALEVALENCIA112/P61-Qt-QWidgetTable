@@ -16,9 +16,18 @@ PersonaDialog::~PersonaDialog()
 void PersonaDialog::on_buttonBox_accepted()
 {
     QString nombre = ui->inNombre->text();
+
     QString apellido = ui->inApellido->text();
+
     QString telefono = ui->inTelefono->text();
+
     QString email = ui->inEmail->text();
+
+    if (nombre.isEmpty()|| apellido.isEmpty() || telefono.isEmpty() || email.isEmpty()){
+        QMessageBox::warning(this, "Adventencia", "Se debe completar todos los campos antes de continuar");
+        return;
+    }
+
     this->m_persona = new Persona(nombre, apellido, telefono, email);
     accept();
 }
